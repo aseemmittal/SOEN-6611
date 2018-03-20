@@ -1,0 +1,38 @@
+Refactoring Type	Source Entity	Target Class	Source/Target accessed members	Rate it!
+Move Method	org.apache.jmeter.protocol.http.control.CookieManager::makeCookie(org.apache.jmeter.protocol.http.control.Cookie):org.apache.commons.httpclient.Cookie	org.apache.jmeter.protocol.http.control.Cookie	0/8	
+Move Method	org.apache.jmeter.engine.StandardJMeterEngine::scheduleThread(org.apache.jmeter.threads.JMeterThread, org.apache.jmeter.threads.ThreadGroup):void	org.apache.jmeter.threads.JMeterThread	0/4	
+Move Method	org.apache.jmeter.protocol.http.proxy.ProxyControl::generateMatchUrl(org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase):java.lang.String	org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase	0/4	
+Move Method	org.apache.jmeter.protocol.http.proxy.gui.ProxyControlGui::populateTable(org.apache.jmeter.gui.util.PowerTableModel, org.apache.jmeter.testelement.property.PropertyIterator):void	org.apache.jmeter.gui.util.PowerTableModel	0/3	
+Move Method	org.apache.jmeter.save.converters.SampleResultConverter::readFile(java.lang.String, org.apache.jmeter.samplers.SampleResult):void	org.apache.jmeter.samplers.SampleResult	0/2	
+Move Method	org.apache.jmeter.services.FileServer::createBufferedReader(org.apache.jmeter.services.FileServer.FileEntry, java.lang.String):java.io.BufferedReader	org.apache.jmeter.services.FileServer.FileEntry	0/2	
+Move Method	org.apache.jmeter.services.FileServer::createBufferedWriter(org.apache.jmeter.services.FileServer.FileEntry, java.lang.String):java.io.BufferedWriter	org.apache.jmeter.services.FileServer.FileEntry	0/2	
+Move Method	org.apache.jmeter.timers.ConstantThroughputTimer::calculateSharedDelay(org.apache.jmeter.timers.ConstantThroughputTimer.ThroughputInfo, long):long	org.apache.jmeter.timers.ConstantThroughputTimer.ThroughputInfo	0/2	
+Move Method	org.apache.jmeter.extractor.RegexExtractor::saveGroups(org.apache.jmeter.threads.JMeterVariables, java.lang.String, org.apache.oro.text.regex.MatchResult):void	org.apache.jmeter.threads.JMeterVariables	0/1	
+Move Method	org.apache.jmeter.extractor.gui.RegexExtractorGui::addField(javax.swing.JPanel, org.apache.jorphan.gui.JLabeledTextField, java.awt.GridBagConstraints):void	org.apache.jorphan.gui.JLabeledTextField	0/1	
+Move Method	org.apache.jmeter.extractor.gui.XPathExtractorGui::addField(javax.swing.JPanel, org.apache.jorphan.gui.JLabeledTextField, java.awt.GridBagConstraints):void	org.apache.jorphan.gui.JLabeledTextField	0/1	
+Move Method	org.apache.jmeter.functions.RegexFunction::saveGroups(org.apache.oro.text.regex.MatchResult, java.lang.String, org.apache.jmeter.threads.JMeterVariables):void	org.apache.jmeter.threads.JMeterVariables	0/1	
+Move Method	org.apache.jmeter.protocol.http.proxy.Proxy::getContentEncoding(org.apache.jmeter.samplers.SampleResult):java.lang.String	org.apache.jmeter.samplers.SampleResult	0/1	
+Move Method	org.apache.jmeter.protocol.http.sampler.HTTPSampler::setConnectionHeaders(java.net.HttpURLConnection, java.net.URL, org.apache.jmeter.protocol.http.control.HeaderManager):void	org.apache.jmeter.protocol.http.control.HeaderManager	0/1	
+Move Method	org.apache.jmeter.visualizers.AssertionVisualizer::getAssertionResult(org.apache.jmeter.samplers.SampleResult):java.lang.String	org.apache.jmeter.samplers.SampleResult	0/1	
+Move Method	org.apache.jmeter.visualizers.MonitorModel::cloneMonitorStats():org.apache.jmeter.visualizers.MonitorStats	org.apache.jmeter.testelement.AbstractTestElement	1/9	
+Move Method	org.apache.jmeter.reporters.Summariser::format(org.apache.jmeter.visualizers.RunningSample, java.lang.String):java.lang.String	org.apache.jmeter.visualizers.RunningSample	1/8	
+Move Method	org.apache.jmeter.testelement.AbstractChart::getValue(org.apache.jmeter.visualizers.SamplingStatCalculator):double	org.apache.jmeter.visualizers.SamplingStatCalculator	1/8	
+Move Method	org.apache.jmeter.JMeterReport::convertSubTree(org.apache.jorphan.collections.HashTree):void	org.apache.jorphan.collections.HashTree	1/3	
+Move Method	org.apache.jmeter.control.IncludeController::removeDisabledItems(org.apache.jorphan.collections.HashTree):void	org.apache.jorphan.collections.HashTree	1/3	
+Move Method	org.apache.jmeter.gui.action.Save::convertSubTree(org.apache.jorphan.collections.HashTree):void	org.apache.jorphan.collections.HashTree	1/3	
+Move Method	org.apache.jmeter.gui.util.PowerTableModel::setRowValues(int, java.lang.Object[]):void	org.apache.jorphan.collections.Data	1/3	
+Move Method	org.apache.jmeter.report.gui.action.ReportSave::convertSubTree(org.apache.jorphan.collections.HashTree):void	org.apache.jorphan.collections.HashTree	1/3	
+Move Method	org.apache.jmeter.save.TestElementSaver::startMap(org.apache.jmeter.testelement.property.MapProperty):void	org.apache.jmeter.testelement.property.MapProperty	1/3	
+Move Method	org.apache.jmeter.visualizers.StatGraphVisualizer::getAllTableData():java.util.Vector	org.apache.jorphan.gui.ObjectTableModel	1/3	
+Move Method	org.apache.commons.cli.avalon.CLArgsParser::getOptionDescription(org.apache.commons.cli.avalon.CLOptionDescriptor):java.lang.String	org.apache.commons.cli.avalon.CLOptionDescriptor	1/2	
+Move Method	org.apache.jmeter.control.ModuleController::createSubTree(org.apache.jorphan.collections.HashTree, org.apache.jmeter.gui.tree.JMeterTreeNode):void	org.apache.jorphan.collections.HashTree	1/2	
+Move Method	org.apache.jmeter.extractor.XPathExtractor::parseResponse(org.apache.jmeter.samplers.SampleResult):org.w3c.dom.Document	org.apache.jmeter.samplers.SampleResult	1/2	
+Move Method	org.apache.jmeter.gui.util.FileListPanel::setFiles(java.lang.String[]):void	org.apache.jorphan.gui.ObjectTableModel	1/2	
+Move Method	org.apache.jmeter.gui.util.FileListPanel::getFiles():java.lang.String[]	org.apache.jorphan.gui.ObjectTableModel	1/2	
+Move Method	org.apache.jmeter.protocol.http.gui.CookiePanel::populateTable(org.apache.jmeter.protocol.http.control.CookieManager):void	org.apache.jmeter.gui.util.PowerTableModel	1/2	
+Move Method	org.apache.jmeter.protocol.java.test.JavaTest::listParameters(org.apache.jmeter.protocol.java.sampler.JavaSamplerContext):void	org.apache.jmeter.protocol.java.sampler.JavaSamplerContext	1/2	
+Move Method	org.apache.jmeter.protocol.java.test.SleepTest::listParameters(org.apache.jmeter.protocol.java.sampler.JavaSamplerContext):void	org.apache.jmeter.protocol.java.sampler.JavaSamplerContext	1/2	
+Move Method	org.apache.jmeter.visualizers.StatGraphVisualizer::getAxisLabels():java.lang.String[]	org.apache.jorphan.gui.ObjectTableModel	1/2	
+Move Method	org.apache.jmeter.protocol.ldap.sampler.LDAPExtSampler::writeSearchResult(javax.naming.directory.SearchResult, org.apache.jorphan.util.XMLBuffer):void	org.apache.jorphan.util.XMLBuffer	2/3	
+Move Method	org.apache.jmeter.threads.JMeterThread::checkAssertions(java.util.List, org.apache.jmeter.samplers.SampleResult):void	org.apache.jmeter.samplers.SampleResult	2/3	
+Move Method	org.apache.jmeter.visualizers.StatGraphVisualizer::getData():double[][]	org.apache.jorphan.gui.ObjectTableModel	2/3	
